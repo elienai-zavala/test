@@ -1,0 +1,98 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.button {
+  @include flex(center, center);
+  box-shadow: $button-shadow;
+  background-color: $blue-5;
+  text-transform: capitalize;
+  cursor: pointer;
+  
+  &:hover, &:focus {
+    transition: 0.15s ease-in-out;
+  }
+}
+
+.container-form {
+  @include size(400px, auto);
+  @include flex(center, center, column);
+  
+  margin: 3rem auto;
+  background-color: white;
+  box-shadow: $login-container-shadow;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  h1 {
+    text-transform: capitalize;
+    font-size: 1.6em;
+    font-weight: 300;
+    padding: 60px 0;
+    padding-bottom: 10px;
+  }
+
+  p {
+    &.offscreen {
+      margin: 2em 0em 0em;
+    }
+    &.errmsg {
+      margin: 2em 0em 0em;
+      color: red;
+      font-weight: bold;
+    }
+  }
+  
+  .btn-login {
+    @include border-radius(5px, 5px, 5px, 5px);
+    align-self: center;
+    width: 60%;
+    padding: 10px 30px;
+    background-color: $blue-100;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 40px 0;
+    
+    &:hover, &:focus {
+      box-shadow: 0px 3px 20px 3px rgba($blue-100,0.3);
+      background-color: $blue-100;
+    }
+  }
+}
+
+form.login {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 70%;
+  height: auto;
+  margin: 2% 5% 10% 5%;
+
+  label {
+    display: inline-block;
+    width: auto;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0.5em 0em;
+  }
+  
+  input {
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    font-weight: bold;
+    @include border-radius(5px, 5px, 5px, 5px);
+    background-color: #f1f3f4;
+    width: auto;
+    height: 35px;
+    border: none;
+    box-shadow: $button-shadow;
+    margin: 0em 0em 1em 0em;
+    
+    &:focus {
+      outline: 0.5px solid #2648ba;
+    }
+  }
+}

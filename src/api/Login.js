@@ -29,10 +29,10 @@ const Login = () => {
     <>
     {
       success ? (
-        <section className="container-form">You're Login.</section>
+        <div className="container-form">You're Login.</div>
       ) : (
-        <section className="container-form">
-          <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="asertive">      
+        <div className="container-form">
+          <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}>      
             {errMsg}
           </p>
           <h1>Sign In</h1>
@@ -60,9 +60,9 @@ const Login = () => {
               required 
             />
     
-            <button className="btn-login">Sign In</button>
+            <button className="button btn-login">Sign In</button>
           </form>
-        </section>
+        </div>
       )
     }
     </>
