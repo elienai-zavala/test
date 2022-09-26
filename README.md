@@ -70,3 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### `npm i sass --save` or `npm install sass --save-dev` to add the SASS package to the project
+
+### `npm install papaparse` or `npm install react-papaparse --save` to add the Reader CSV package to the project
