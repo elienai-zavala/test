@@ -1,6 +1,9 @@
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Dashboard from './Dashboard';
 
 const Login = () => {
+
   const userRef = useRef();
   const errRef = useRef();
 
@@ -19,7 +22,8 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(user, pass);
+    // console.log(user, pass);
+    // console.log(JSON.stringify({user, pass}));
     setUser('');
     setPass('');
     setSuccess(true);
@@ -29,7 +33,10 @@ const Login = () => {
     <>
     {
       success ? (
-        <div className="container-form">You're Login.</div>
+        // <div className="container-form">You're Login.</div>
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+        </Routes>
       ) : (
         <div className="container-form">
           <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}>      

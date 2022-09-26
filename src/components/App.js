@@ -1,12 +1,10 @@
 import React from 'react';
-// import Login from './Login';
-import UploadFile from './UploadFile';
+import Login from './Login';
 
 function App() {
   return (
     <React.StrictMode>
-      {/* <Login /> */}
-      <UploadFile />
+      <Login />
     </React.StrictMode>
   );
 }

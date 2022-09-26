@@ -71,4 +71,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### `npm i sass --save` or `npm install sass --save-dev` to add the SASS package to the project
 
-### `npm install papaparse` or `npm install react-papaparse --save` to add the Reader CSV package to the project
+### `npm install papaparse` or `npm install react-papaparse --save` to add the Reader CSV package to the project.
+
+### `npm install react-router-dom` para crear los enrutadores de lista.
+
+### `npm install axios` to add AXIOS to Authentication Login.
